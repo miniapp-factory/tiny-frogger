@@ -66,6 +66,7 @@ export default function GameBoard() {
 
   return (
     <div className="flex flex-col items-center gap-4">
+      <Button onClick={reset}>Start Game</Button>
       <div className="grid grid-rows-8 grid-cols-8 gap-1 bg-yellow-200 p-2 rounded">
         {cars.flatMap((lane, r) =>
           lane.map((hasCar, c) => {
